@@ -1,0 +1,17 @@
+.profile__text-info{
+  grid-row-gap: 16px;
+  max-width: 336px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+      "name button"
+      "text .";
+}
+
+@media screen and (max-width: 490px) {
+  .profile__text-info {
+      gap: 14px 10px;
+      margin-bottom: 36px;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Место</title>
+        <link rel="stylesheet" href="./pages/index.css" />
+    </head>
+
+    <body class="page">
+        <header class="header">
+          <div class="header__logo"></div>
+        </header>
+
+        <main class="content">
+          <section class="profile">
+            <img class="profile__avatar" src="./images/Geralt.jpg" alt="аватарка">
+              <div class="profile__info">
+              <div class="profile__text-info">
+                <h1 class="profile__name">Геральт</h1>
+                <button class="profile__edit-button" type="button"></button>
+                <p class="profile__description">Ведьмак, охотник на женщин</p>
+              </div>
+              </div>
+                  <button class="profile__add-button" type="button"></button>
+            </section>
+
+      <section class="elements">
+      <article class="elements__card">
+      <img src="./images/Ien.jpg" alt="Йенифер" class="elements__card-image">
+        <div class="elements__card-description">
+          <h2 class="elements__place-name">Йенифер</h2>
+          <button class="elements__like-button" type="button"></button>
+      </div>
+      </article>
+
+      <article class="elements__card">
+      <img src="./images/Tris.png" alt="Трис Мериголд" class="elements__card-image">
+        <div class="elements__card-description">
+          <h2 class="elements__place-name">Трис Мериголд</h2>
+          <button class="elements__like-button" type="button"></button>
+      </div>
+      </article>
+
+      <article class="elements__card">
+      <img src="./images/KeyraMeiz.jpg" alt="Кейра Мец" class="elements__card-image">
+        <div class="elements__card-description">
+          <h2 class="elements__place-name">Кейра Мец</h2>
+          <button class="elements__like-button" type="button"></button>
+      </div>
+      </article>
+
+      <article class="elements__card">
+      <img src="./images/Shanni.jpg" alt="Шанни" class="elements__card-image">
+        <div class="elements__card-description">
+          <h2 class="elements__place-name">Шанни</h2>
+          <button class="elements__like-button" type="button"></button>
+      </div>
+      </article>
+
+      <article class="elements__card">
+      <img src="./images/MadamSaha.jpg" alt="Мадам Саша" class="elements__card-image">
+        <div class="elements__card-description">
+          <h2 class="elements__place-name">Мадам Саша</h2>
+          <button class="elements__like-button" type="button"></button>
+      </div>
+      </article>
+
+      <article class="elements__card">
+      <img src="./images/Utta.jpg" alt="Ютта ан Димун" class="elements__card-image">
+        <div class="elements__card-description">
+          <h2 class="elements__place-name">Ютта ан Димун</h2>
+          <button class="elements__like-button" type="button"></button>
+      </div>
+      </article>
+      </section>
+
+        </main>
+
+        <footer class="footer">
+        <p class="footer__copyright">&copy; 2021. Elizaveta Gladkova</p>
+        </footer> 
+       
+        <div class="popup" id="popup">
+          <div class="popup__container">
+            <button class="popup__container-exit-button" type="button"></button>
+           <div class="popup__container-profile-editor">
+             <h3 class="popup__container-header">Редактировать профиль</h3>
+             <form action="#" class="popup__profile-form" method="GET" name="formElement">
+                <fieldset class="popup__profile-settings">
+                  <input type="text" class="popup__profile-input popup__profile-input_type_name">
+                  <input type="text" class="popup__profile-input popup__profile-input_type_description">
+                  <button class="popup__save-button" type="submit">Сохранить</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    <script src="./script/script.js"></script>
+         
+    </body>
+</html>
