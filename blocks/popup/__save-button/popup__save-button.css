@@ -5,9 +5,9 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
+  background-color: black;
   text-align: center;
-  color: #FFFFFF;
-  background-color: #000;
+  color: white;
   border: none;
   border-radius: 2px;
   margin: 40px 36px 37px;
@@ -19,12 +19,12 @@
   transition: opacity 1s ease;
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 500px) {
   .popup__save-button {
-      height: 46px;
-      width: 238px;
-      margin: 40px 22px 25px;
-      font-size: 14px;
-      line-height: 17px;
+    height: 46px;
+    width: 238px;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 40px 22px 25px;
   }
 }

@@ -1,13 +1,13 @@
 .popup__container {
+  width: 470px;
   display: flex;
   flex-direction: column;
-  width: 470px;
-  z-index: 3;
   align-self: center;
+  z-index: 3;
 }
 
 @media screen and (max-width: 490px) {
   .popup__container {
-      width: 282px;
+    width: 282px;
   }
 }

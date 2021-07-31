@@ -4,10 +4,11 @@
   margin: 40px 0 50px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .profile {
     max-width: 282px;
     flex-direction: column;
-    margin: 42px auto 36px;
+    justify-content: center;
+    margin: 0 auto 36px;
   }
 }

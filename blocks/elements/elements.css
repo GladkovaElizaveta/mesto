@@ -1,9 +1,9 @@
 .elements{
   display: grid;
-  gap: 20px 17px;
-  margin-bottom: 66px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
+  gap: 20px 17px;
+  margin-bottom: 66px;
 }
 
 @media screen and (max-width: 900px) {
