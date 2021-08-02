@@ -18,10 +18,10 @@
 
 @media screen and (max-width: 500px) {
   .popup__container-exit-button{
-      width: 20px;
-      height: 20px;
-      background-size: 20px;
-      align-self: flex-end;
-      margin-bottom: 16px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    align-self: flex-end;
+    margin-bottom: 16px;
   }
 }

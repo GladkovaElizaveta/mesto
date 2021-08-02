@@ -6,7 +6,7 @@
   z-index: 3;
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 500px) {
   .popup__container {
     width: 282px;
   }

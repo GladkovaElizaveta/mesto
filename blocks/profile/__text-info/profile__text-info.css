@@ -1,4 +1,4 @@
-.profile__text-info{
+.profile__text-info {
   max-width: 336px;
   display: grid;
   grid-template-columns: repeat(2, auto);
