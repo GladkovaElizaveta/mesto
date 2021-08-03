@@ -5,8 +5,8 @@ let profileEditButton = page.querySelector('.profile__edit-button');
 let popup = page.querySelector('.popup');
 let popupCloseButton = page.querySelector('.popup__container-exit-button');
 let cardElement = page.querySelector('.popup__profile-card')
-let nameInput = page.querySelector('.popup__profile_input_name');
-let activityInput = page.querySelector('.popup__profile_input_description');
+let nameInput = page.querySelector('.popup__profile-input_name');
+let activityInput = page.querySelector('.popup__profile-input_description');
 function openPopup() {
     popup.classList.add('popup_opened')
     nameInput.value = profileName.textContent;
