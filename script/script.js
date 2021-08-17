@@ -59,11 +59,13 @@ const cardTemplate = page.querySelector(".elements__card-template");
 const elementsSection = page.querySelector(".elements");
 const popupPhoto = page.querySelector(".popup__photo");
 const popupPhotoCaption = page.querySelector(".popup__photo-caption");
+
 const viewCard = (evt) => {
   openViewPhotoPopup();
   const giveMeAPicture = evt.target.getAttribute("src");
   const givemeAName = evt.target.getAttribute("alt");
   popupPhoto.setAttribute("src", giveMeAPicture);
+  popupPhoto.setAttribute("alt", givemeAName);
   popupPhotoCaption.textContent = givemeAName;
 };
 
