@@ -26,53 +26,18 @@
             </section>
 
             <section class="elements">
-                <article class="elements__card">
-                    <img src="./images/Ien.jpg" alt="Йенифер" class="elements__card-image" />
-                    <div class="elements__card-description">
-                        <h2 class="elements__place-name">Йенифер</h2>
-                        <button class="elements__like-button" type="button"></button>
-                    </div>
-                </article>
-
-                <article class="elements__card">
-                    <img src="./images/Tris.png" alt="Трис Мериголд" class="elements__card-image" />
-                    <div class="elements__card-description">
-                        <h2 class="elements__place-name">Трис Мериголд</h2>
-                        <button class="elements__like-button" type="button"></button>
-                    </div>
-                </article>
-
-                <article class="elements__card">
-                    <img src="./images/KeyraMeiz.jpg" alt="Кейра Мец" class="elements__card-image" />
-                    <div class="elements__card-description">
-                        <h2 class="elements__place-name">Кейра Мец</h2>
-                        <button class="elements__like-button" type="button"></button>
-                    </div>
-                </article>
-
-                <article class="elements__card">
-                    <img src="./images/Shanni.jpg" alt="Шанни" class="elements__card-image" />
-                    <div class="elements__card-description">
-                        <h2 class="elements__place-name">Шанни</h2>
-                        <button class="elements__like-button" type="button"></button>
-                    </div>
-                </article>
-
-                <article class="elements__card">
-                    <img src="./images/MadamSaha.jpg" alt="Мадам Саша" class="elements__card-image" />
-                    <div class="elements__card-description">
-                        <h2 class="elements__place-name">Мадам Саша</h2>
-                        <button class="elements__like-button" type="button"></button>
-                    </div>
-                </article>
-
-                <article class="elements__card">
-                    <img src="./images/Utta.jpg" alt="Ютта ан Димун" class="elements__card-image" />
-                    <div class="elements__card-description">
-                        <h2 class="elements__place-name">Ютта ан Димун</h2>
-                        <button class="elements__like-button" type="button"></button>
-                    </div>
-                </article>
+                <template class="elements__card-template">
+                    <article class="elements__card">
+                        <div class="elements__card-image-container">
+                            <img class="elements__card-image src="./images/Ien.jpg" alt="Описание фото">
+                            <button class="elements__garbage-button" type="button"></button>
+                        </div>
+                        <div class="elements__card-description">
+                            <h3 class="elements__place-name">Йенифер</h3>
+                            <button class="elements__like-button" type="button"></button>
+                        </div>
+                    </article>
+                </template>
             </section>
         </main>
 
@@ -80,7 +45,7 @@
             <p class="footer__copyright">&copy; 2021. Elizaveta Gladkova</p>
         </footer>
 
-        <div class="popup" id="popup">
+        <div class="popup" id="profileForm">
             <div class="popup__container">
                 <button class="popup__container-exit-button" type="button"></button>
                 <div class="popup__container-profile-editor">
@@ -89,11 +54,35 @@
                         <fieldset class="popup__profile-settings">
                             <input type="text" name="name" class="popup__profile-input popup__profile-input_type_name" />
                             <input type="text" name="description" class="popup__profile-input popup__profile-input_type_description" />
-                            <button class="popup__save-button" type="submit">Сохранить</button>
+                            <button class="popup__save-button popup__save-button_type_save" type="submit">Сохранить</button>
                         </fieldset>
                     </form>
                 </div>
             </div>
+        </div>
+
+        <div class="popup" id="cardForm">
+            <div class="popup__container">
+                <button class="popup__container-exit-button" type="button"></button>
+                <div class="popup__container-profile-editor">
+                    <h3 class="popup__container-header">Новое место</h3>
+                    <form action="#" class="popup__profile-card" method="GET" name="formElement">
+                        <fieldset class="popup__profile-settings">
+                            <input type="text" name="name" class="popup__profile-input popup__profile-input_type_place" placeholder="Название" />
+                            <input type="url" name="reference" class="popup__profile-input popup__profile-input_type_adress" placeholder="Ссылка на картинку" />
+                            <button class="popup__save-button popup__save-button_type_add" type="submit">Сохранить</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="viewPhoto">
+            <figure class="popup__figure">
+                <button class="popup__close-button" type="button"></button>
+                <img class="popup__photo" src="./images/Ien.jpg" alt="Описание изображения" />
+                <h3 class="popup__photo-caption"></h3>
+            </figure>
         </div>
 
         <script src="./script/script.js"></script>

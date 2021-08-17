@@ -1,0 +1,7 @@
+.popup__figure {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  z-index: 3;
+  margin: auto;
+}
